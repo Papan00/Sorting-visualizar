@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="expand">
+    <div class="nav">
+        <div class="header">
+            <div class="logo">
+                <h1>SORTING VISUALISER</h1>
+            </div>
+            <ul class="nav-links">
+                <div class="section">
+                    <input class="slider" id="delay-slider" oninput="updateDelay(this.value)" name="delay-slider"
+                        type="range" min="0" max="800" value="40" step="10"><br>
+                    <label name="delay-slider" id="delayValue">Delay</label>
+                </div>
+                <div class="section">
+                    <input class="slider" id="number-slider" onchange="updateSize(this.value)"
+                        oninput="updateSizeValue(this.value)" name="delay-slider" type="range" min="40" max="160"
+                        step="20" value="100"><br>
+                    <label name="number-slider" id="numberValue">Size</label>
+                </div>
+                <div class="section">
+                    <select>
+                        <option value="1">Selection Sort</option>
+                        <option value="2">Bubble Sort</option>
+                        <option value="3">Insertion Sort</option>
+                        <option value="4">Merge Sort</option>
+                        <option value="4">Quick Sort</option>
+                        <option value="4">Heap Sort</option>
+                    </select>
+                </div>
+                <div class="section">
+                    <button name="sort" onclick="sort()" id="sort-btn">SORT</button>
+                </div>
+                <div class="section">
+                    <button onclick="shuffleArray()">SHUFFLE</button>
+                </div>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table expand"></div>
+
+    <script src="res.js"></script>
+    <script src="visual.js"></script>
+    <script src="main.js"></script>
+    <script src="bubble.js"></script>
+    <script src="heap.js"></script>
+    <script src="insertion.js"></script>
+    <script src="merge.js"></script>
+    <script src="quick.js"></script>
+    <script src="selection.js"></script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
