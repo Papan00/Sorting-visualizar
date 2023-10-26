@@ -1,4 +1,4 @@
-//Selection Sort Implementation
+
 
 function selectionSort(iter) {
     var j, pos;
