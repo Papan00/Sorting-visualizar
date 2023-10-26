@@ -1,4 +1,4 @@
-//Printing/ Visualizing
+
 
 function printChartOnly() {
     document.getElementsByClassName("table")[0].innerHTML = "";
