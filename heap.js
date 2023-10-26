@@ -1,4 +1,4 @@
-//Heap Sort Implementation
+
 
 async function heapify(n, i) {
     var largest = i; // Initialize largest as root 
