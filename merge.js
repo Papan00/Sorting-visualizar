@@ -1,4 +1,4 @@
-//Merge Sort Implementation
+
 
 async function merge(l, m, r) {
     var L = [],
